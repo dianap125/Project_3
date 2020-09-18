@@ -1,1 +1,22 @@
-FILE_NAME= 
+#build using repl.it
+
+import urllib.request 
+
+total_requests = 0
+last_year_requests = 0
+
+urllib.request.urlretrieve("https://s3.amazonaws.com/tcmg476/http_access_log", "save.log")
+x = open("save.log", "r")
+URL = 'https://s3.amazonaws.com/tcmg476/http_access_log'
+my_copy = 'save.log'
+
+#finding amount of requests
+for line in x:
+   total_requests = total_requests + 1
+   if '1995' in line:
+      last_year_requests = last_year_requests + 1
+x.close()
+
+#print results
+print("How many total requests have been made in the last year?", last_year_requests)
+print("How many total requests were made in the time period represented by the log?", total_requests)
