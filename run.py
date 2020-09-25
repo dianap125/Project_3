@@ -20,3 +20,11 @@ x.close()
 #print results
 print("How many total requests have been made in the last year?", last_year_requests)
 print("How many total requests were made in the time period represented by the log?", total_requests)
+
+print("How many requests were made on each day?")
+print("How many requests were made on a week-by-week basis? Per month?")
+print("What percentage of the requests were not successful (any 4xx status code)?")
+print("What percentage of the requests were redirected elsewhere (any 3xx codes)?")
+print("What was the most-requested file?")
+print("What was the least-requested file?")
+
