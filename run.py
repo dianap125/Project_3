@@ -16,10 +16,11 @@ for line in x:
    if '1995' in line:
       last_year_requests = last_year_requests + 1
 x.close()
-
 #print results
 print("How many total requests have been made in the last year?", last_year_requests)
 print("How many total requests were made in the time period represented by the log?", total_requests)
+
+#Your program should split the log file into 12 smaller files
 
 print("How many requests were made on each day?")
 print("How many requests were made on a week-by-week basis? Per month?")
